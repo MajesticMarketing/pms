@@ -1,0 +1,59 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.form-container {
+  @apply w-80 bg-gray-900 text-gray-100 p-8 rounded-xl;
+}
+.title {
+  @apply text-center text-2xl leading-8 font-bold;
+}
+.form {
+  @apply mt-6;
+}
+.input-group {
+  @apply text-sm leading-5 mt-1;
+}
+.input-group label {
+  @apply block text-gray-400 mb-1;
+}
+.input-group input {
+  @apply w-full border border-gray-700 bg-gray-900 text-gray-100 px-4 py-3 rounded-md border-solid focus:border-violet-400;
+  outline: 0;
+}
+.forgot {
+  @apply flex justify-end text-xs leading-4 text-gray-400 mt-2 mb-3.5 mx-0;
+}
+.forgot a,
+.signup a {
+  @apply text-gray-100 no-underline text-sm;
+}
+.forgot a:hover,
+.signup a:hover {
+  text-decoration: underline rgba(167, 139, 250, 1);
+}
+.sign {
+  @apply block w-full bg-violet-400 text-center text-gray-900 font-semibold p-3 rounded-md border-[none];
+}
+.social-message {
+  @apply flex items-center pt-4;
+}
+.line {
+  @apply h-px flex-1;
+}
+.social-message .message {
+  @apply text-sm leading-5 text-gray-400 px-3;
+}
+.social-icons {
+  @apply flex justify-center;
+}
+.social-icons .icon {
+  @apply bg-transparent ml-2 p-3 rounded-sm border-[none];
+}
+.social-icons .icon svg {
+  @apply h-5 w-5 fill-white;
+}
+.signup {
+  @apply text-center text-xs leading-4 text-gray-400;
+}
